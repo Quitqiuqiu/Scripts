@@ -67,7 +67,7 @@ def merge_txt_to_csv(input_dir, output_csv, include_filename=False):
         print(f"所有文件处理完毕，结果已写入到 '{output_csv}'。")
 
 merge_txt_to_csv(
-    input_dir='D:\\Data\\Machine Learning\\中文文本分类项目数据集\\test_corpus',
-    output_csv='C:\\Users\\Qiu\\Desktop\\test_corpus.csv',
+    input_dir='D:\\Data\\test_corpus',
+    output_csv='C:\\Users\\test_corpus.csv',
     include_filename=True
 )
