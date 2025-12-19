@@ -2,8 +2,8 @@ import requests
 import pandas as pd
 
 # 你的 Steam API Key 和 Steam64 ID（需要手动替换）
-STEAM_API_KEY = "4A103211AC1E894B0E50B76709043734"
-STEAM_ID = "76561199085956364"
+STEAM_API_KEY = "1234567890"
+STEAM_ID = "!@#$%^&*()"
 
 # 获取游戏游玩时长的 API URL
 URL = f"http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={STEAM_API_KEY}&steamid={STEAM_ID}&format=json&include_appinfo=true"
@@ -27,5 +27,6 @@ df = pd.DataFrame(game_list).sort_values(by="Playtime (hours)", ascending=False)
 # 保存为 CSV 文件
 csv_filename = "C:/Users/Qiu/Desktop/steam_playtime.csv"
 df.to_csv(csv_filename, index=False, encoding="utf-8-sig")
+
 
 print(f"数据已保存为 {csv_filename}")
